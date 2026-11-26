@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AFTER HOURS — Pay for Time. Stay for the Vibe.</title>
+<meta name="description" content="AFTER HOURS is a premium time-based café, social lounge and private experience destination.">
+<meta property="og:title" content="AFTER HOURS — Pay for Time. Stay for the Vibe.">
+<meta property="og:description" content="A premium time-based café, social lounge and private experience destination.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0a0b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300&family=Jost:wght@300;400;500&display=swap">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"AFTER HOURS","description":"A premium time-based café, social lounge and private experience destination."}</script>
+<style>
+:root{--bg:#0a0a0b;--b2:#121213;--b3:#1a1918;--gold:#b08d57;--ch:#e6d3a3;--tx:#f4efe6;--mu:#a8a39a;--ln:rgba(176,141,87,.28);--serif:"Cormorant Garamond",Georgia,serif;--sans:Jost,system-ui,-apple-system,"Segoe UI",sans-serif;--e:cubic-bezier(.2,.7,.2,1);color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}html.lock{overflow:hidden}
+body{margin:0;background:var(--bg);color:var(--tx);font:300 16px/1.75 var(--sans);overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:300;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.3rem,8vw,6rem);letter-spacing:.06em}
+h2{font-size:clamp(2rem,5vw,3.4rem)}h3{font-size:1.6rem;color:var(--ch);font-weight:400}
+p{margin:0 0 1em;color:var(--mu)}
+:focus-visible{outline:2px solid var(--ch);outline-offset:3px}
+.skip{position:absolute;left:-999px}.skip:focus{left:10px;top:10px;background:var(--gold);color:#000;padding:8px 14px;z-index:200}
+#load{position:fixed;inset:0;background:var(--bg);display:grid;place-content:center;justify-items:center;gap:22px;z-index:150;font:300 clamp(1rem,4vw,1.4rem) var(--serif);letter-spacing:.5em;color:var(--ch);transition:opacity .9s .1s,visibility .9s .1s;text-indent:.5em}
+#load i,#cv i{display:block;height:1px;width:140px;background:var(--gold);transform:scaleX(0);animation:ln 1.2s var(--e) forwards}
+#load.off{opacity:0;visibility:hidden}
+#cv{position:fixed;inset:0;background:var(--bg);z-index:120;display:grid;place-items:center;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s}
+#cv.on{opacity:1;visibility:visible}#cv.on i{animation:ln .5s var(--e) forwards}
+@keyframes ln{to{transform:scaleX(1)}}
+header{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:calc(16px + env(safe-area-inset-top,0px)) max(5vw,env(safe-area-inset-right,0px)) 16px max(5vw,env(safe-area-inset-left,0px));transition:padding .4s}
+header::before{content:"";position:absolute;inset:0;z-index:-1;background:rgba(10,10,11,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--ln);opacity:0;transition:opacity .4s}
+header.sc::before{opacity:1}header.sc{padding-top:calc(9px + env(safe-area-inset-top,0px));padding-bottom:9px}header.mo::before{opacity:0}
+.logo{font:400 1.2rem var(--serif);letter-spacing:.3em;color:var(--ch);white-space:nowrap;padding:8px 0}
+nav{display:flex;gap:22px;align-items:center}
+nav a.l{font-size:.7rem;letter-spacing:.2em;color:var(--mu);padding:8px 0;border-bottom:1px solid transparent;transition:.3s}
+nav a.l:hover,nav a.l.on{color:var(--tx);border-color:var(--gold)}
+.btn{display:inline-block;padding:15px 30px;min-height:48px;border:1px solid var(--gold);color:var(--ch);font:400 .72rem var(--sans);letter-spacing:.22em;background:none;cursor:pointer;position:relative;overflow:hidden;transition:color .4s;z-index:0;text-align:center}
+.btn::before{content:"";position:absolute;inset:0;background:var(--gold);transform:translateY(101%);transition:transform .45s var(--e);z-index:-1}
+.btn:hover,.btn:focus-visible{color:#0a0a0b}.btn:hover::before,.btn:focus-visible::before{transform:none}
+.btn.s{padding:11px 18px;min-height:40px;font-size:.62rem}.btn.f{background:var(--gold);color:#0a0a0b}.btn.f::before{background:var(--ch)}
+.btn[disabled]{opacity:.5;cursor:wait}
+#bg{display:none;width:48px;height:48px;background:none;border:0;cursor:pointer;position:relative}
+#bg i{position:absolute;left:11px;right:11px;height:1px;background:var(--ch);transition:.35s}
+#bg i:nth-child(1){top:18px}#bg i:nth-child(2){top:24px}#bg i:nth-child(3){top:30px}
+#bg[aria-expanded=true] i:nth-child(1){top:24px;transform:rotate(45deg)}#bg[aria-expanded=true] i:nth-child(2){opacity:0}#bg[aria-expanded=true] i:nth-child(3){top:24px;transform:rotate(-45deg)}
+@media(max-width:1080px){#bg{display:block}nav{position:fixed;inset:0;background:radial-gradient(ellipse at 50% 20%,#241c10,var(--bg) 70%);flex-direction:column;justify-content:center;gap:14px;opacity:0;visibility:hidden;transition:opacity .45s,visibility .45s;padding:90px 20px 30px;z-index:-1;overflow-y:auto}nav.open{opacity:1;visibility:visible}nav a.l{font:300 clamp(1.6rem,7vw,2.2rem) var(--serif);letter-spacing:.2em;opacity:0;transform:translateY(14px);transition:.5s var(--e)}nav.open a.l{opacity:1;transform:none}nav.open a.l:nth-child(2){transition-delay:.05s}nav.open a.l:nth-child(3){transition-delay:.1s}nav.open a.l:nth-child(4){transition-delay:.15s}nav.open a.l:nth-child(5){transition-delay:.2s}nav.open a.l:nth-child(6){transition-delay:.25s}nav.open a.l:nth-child(7){transition-delay:.3s}nav.open a.l:nth-child(8){transition-delay:.35s}nav .btn.s{margin-top:14px;font-size:.7rem}}
+main{transition:opacity .3s}
+.hero{position:relative;min-height:100svh;display:grid;place-items:center;text-align:center;padding:130px 6vw 90px;overflow:hidden;isolation:isolate}
+.hero.sm{min-height:64svh;padding-bottom:70px}
+.bgi{position:absolute;inset:-8% 0;z-index:-1;transform:translate3d(0,var(--py,0),0);will-change:transform}
+.bgi svg{width:100%;height:100%;display:block;opacity:.85}
+.bgi::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,10,11,.6),rgba(10,10,11,.15) 40%,var(--bg))}
+[data-p=membership] .bgi::after{background:linear-gradient(180deg,rgba(10,10,11,.75),rgba(10,10,11,.3) 45%,var(--bg))}
+[data-p=events] .bgi svg{filter:saturate(1.2)}
+.hi{max-width:1000px}
+.kick{font-size:.7rem;letter-spacing:.35em;color:var(--gold);text-transform:uppercase;margin-bottom:18px;display:block}
+.sub{font:italic 300 clamp(1.15rem,2.6vw,1.7rem) var(--serif);color:var(--ch)}
+.w{display:inline-block;overflow:hidden;vertical-align:top;padding-bottom:.1em}
+.w>span{display:inline-block;transform:translateY(110%);animation:rise 1s var(--e) forwards;animation-delay:calc(var(--i)*.1s + .35s)}
+@keyframes rise{to{transform:none}}@keyframes fade{from{opacity:0;transform:translateY(14px)}}
+.hi>.kick,.hi>.sub,.hi>p,.hi>.row{animation:fade 1s .85s both}
+.cue{display:block;width:1px;height:56px;margin:44px auto 0;background:linear-gradient(var(--gold),transparent);animation:fade 1s 1.3s both,cue 2.2s 2s infinite}
+@keyframes cue{50%{transform:scaleY(.4);transform-origin:top}}
+.row{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-top:30px}
+section{padding:clamp(64px,10vw,130px) 6vw}.in{max-width:1240px;margin:0 auto}
+.band{background:linear-gradient(180deg,var(--b2),#0e0e0f)}
+.g{display:grid;gap:26px;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}
+.card{border:1px solid var(--ln);padding:32px;background:linear-gradient(160deg,var(--b3),var(--b2));transition:border-color .4s,transform .5s var(--e)}
+.card:hover{border-color:var(--gold);transform:translateY(-5px)}.band .card{background:linear-gradient(160deg,#151414,var(--bg))}
+.card .n{font-size:.7rem;letter-spacing:.3em;color:var(--gold);display:block;margin-bottom:14px}
+.im{position:relative;margin:0;overflow:hidden;border:1px solid var(--ln);background:var(--b2);aspect-ratio:4/5;clip-path:inset(0 0 100% 0);transition:clip-path 1.3s var(--e),border-color .4s;width:100%}
+.im.in{clip-path:inset(0)}.im:hover{border-color:var(--gold)}
+.im svg,.im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.im svg{transform:scale(1.15);transition:transform 1.8s var(--e)}.im.in svg{transform:none}.im.in:hover svg{transform:scale(1.05)}
+.im img{z-index:1}.im::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.7));pointer-events:none;z-index:2}
+.im span{position:absolute;left:14px;right:14px;bottom:12px;z-index:3;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ch)}
+.im.w4{aspect-ratio:4/3}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,6vw,90px);align-items:center}.split.r>:first-child{order:2}
+@media(max-width:800px){.split{grid-template-columns:1fr}.split.r>:first-child{order:0}.split .im{aspect-ratio:4/3}}
+.hs{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 0 18px;margin-top:30px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.hs::-webkit-scrollbar{display:none}
+.hs a{flex:0 0 min(74vw,320px);scroll-snap-align:start}.hs .im{aspect-ratio:3/4}
+.ctl{display:flex;gap:10px;margin-top:6px}.ctl button{width:48px;height:48px;border:1px solid var(--ln);background:none;color:var(--ch);font-size:1.3rem;cursor:pointer;transition:.3s}.ctl button:hover{border-color:var(--gold);background:rgba(176,141,87,.12)}
+.tl{border-left:1px solid var(--gold);margin-left:8px;padding-left:30px}.tl div{position:relative;padding-bottom:34px}
+.tl div::before{content:"";position:absolute;left:-36px;top:12px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:1px solid var(--gold)}
+.tag{display:inline-block;font-size:.6rem;letter-spacing:.15em;border:1px dashed var(--mu);color:var(--mu);padding:2px 8px;text-transform:uppercase;line-height:1.6}
+.mc{aspect-ratio:1.586;max-width:420px;width:100%;margin:auto;border-radius:16px;position:relative;overflow:hidden;background:linear-gradient(145deg,#1d1c1d,#070707);border:1px solid #2b2b2c;box-shadow:0 30px 60px rgba(0,0,0,.6),inset 0 0 0 1px rgba(176,141,87,.18);display:flex;flex-direction:column;justify-content:space-between;padding:7%;font-family:var(--serif);color:var(--gold);transition:transform .8s var(--e)}
+.mc::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 35%,rgba(230,211,168,.14) 50%,transparent 65%);transform:translateX(-100%);animation:sh 6s 1.5s infinite}
+@keyframes sh{40%,100%{transform:translateX(100%)}}
+.mc:hover{transform:perspective(800px) rotateY(-7deg) rotateX(3deg)}
+.mc strong{font-weight:400;letter-spacing:.35em;font-size:clamp(1rem,4vw,1.3rem)}.mc small{font:300 .58rem var(--sans);letter-spacing:.3em}
+.mas{columns:3 240px;column-gap:16px}.mas button{display:block;width:100%;margin:0 0 16px;break-inside:avoid;padding:0;border:0;background:none;cursor:zoom-in}
+.fl{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:30px}
+.fl button{background:none;border:1px solid var(--ln);color:var(--mu);padding:11px 20px;min-height:44px;font:400 .68rem var(--sans);letter-spacing:.18em;cursor:pointer;text-transform:uppercase;transition:.3s}
+.fl button:hover{color:var(--tx)}.fl button[aria-pressed=true]{border-color:var(--gold);color:var(--ch);background:rgba(176,141,87,.12)}
+.empty{border:1px dashed var(--ln);padding:40px;text-align:center}
+#lb{position:fixed;inset:0;background:rgba(5,5,5,.97);z-index:110;display:none;place-items:center;padding:20px}#lb.on{display:grid}
+#li{width:min(92vw,820px);height:min(72svh,640px);animation:fade .5s}#li .im{height:100%;aspect-ratio:auto}#li .im img{object-fit:contain}#li .im span{display:none}
+#lc{position:absolute;bottom:calc(18px + env(safe-area-inset-bottom,0px));left:0;right:0;text-align:center;font-size:.7rem;letter-spacing:.2em;color:var(--ch);text-transform:uppercase;margin:0}
+#lb button{position:absolute;background:rgba(10,10,11,.6);border:1px solid var(--ln);color:var(--ch);width:48px;height:48px;font-size:1.4rem;cursor:pointer;z-index:2}
+form{display:grid;gap:18px}.fd{display:grid;gap:6px}
+label{font-size:.65rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+input,select,textarea{background:var(--b2);border:1px solid var(--ln);color:var(--tx);padding:14px;min-height:48px;font:300 1rem var(--sans);width:100%;border-radius:0;transition:border-color .3s}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);outline:0}
+input[aria-invalid=true],textarea[aria-invalid=true]{border-color:#c0705f}
+.er{color:#e39a8a;font-size:.8rem;min-height:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}@media(max-width:560px){.two{grid-template-columns:1fr}}
+.note{border:1px dashed var(--gold);padding:14px;font-size:.88rem;color:var(--ch)}
+#fs{margin:0;font-size:.92rem}#fs.ok{color:var(--ch)}#fs.bad{color:#e39a8a}
+.cta{text-align:center;min-height:62svh;display:grid;place-items:center;background:radial-gradient(ellipse at 50% 50%,#2a2114,var(--bg) 70%)}
+footer{border-top:1px solid var(--ln);padding:60px 6vw calc(40px + env(safe-area-inset-bottom,0px));display:grid;gap:34px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));background:var(--b2);font-size:.88rem;color:var(--mu)}
+footer a:hover{color:var(--ch)}footer .logo{display:block;margin-bottom:8px}footer a.fa{display:block;padding:3px 0}
+#tp{position:fixed;right:max(18px,env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));width:48px;height:48px;border:1px solid var(--gold);background:rgba(10,10,11,.85);color:var(--ch);font-size:1.2rem;cursor:pointer;z-index:60;opacity:0;visibility:hidden;transition:.4s}#tp.on{opacity:1;visibility:visible}
+.rv{opacity:0;transform:translateY(28px);transition:opacity 1s,transform 1s var(--e)}.rv.in{opacity:1;transform:none}
+.g>.rv:nth-child(2){transition-delay:.1s}.g>.rv:nth-child(3){transition-delay:.2s}.g>.rv:nth-child(4){transition-delay:.1s}.g>.rv:nth-child(5){transition-delay:.2s}.g>.rv:nth-child(6){transition-delay:.3s}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}.im{clip-path:none}.im svg{transform:none}.w>span{transform:none}.bgi{transform:none}}
+</style>
+</head>
+<body data-p="home">
+<a class="skip" href="#main">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs><radialGradient id="g" cx=".5" cy=".35" r=".75"><stop offset="0" stop-color="#3a2d1a"/><stop offset="1" stop-color="#0a0a0b"/></radialGradient><radialGradient id="w"><stop offset="0" stop-color="#e6d3a3" stop-opacity=".5"/><stop offset="1" stop-color="#e6d3a3" stop-opacity="0"/></radialGradient></defs></svg>
+<div id="load" aria-hidden="true">AFTER HOURS<i></i></div>
+<div id="cv" aria-hidden="true"><i></i></div>
+<header id="hd">
+<a class="logo" href="#home" aria-label="AFTER HOURS home">AFTER HOURS</a>
+<button id="bg" aria-label="Menu" aria-expanded="false" aria-controls="nav"><i></i><i></i><i></i></button>
+<nav id="nav" aria-label="Main"></nav>
+</header>
+<main id="main" tabindex="-1"></main>
+<noscript><p style="padding:120px 6vw">AFTER HOURS needs JavaScript enabled to display this website.</p></noscript>
+<footer id="ft"></footer>
+<button id="tp" aria-label="Back to top">↑</button>
+<div id="lb" role="dialog" aria-modal="true" aria-label="Image viewer"><button id="lx" style="top:calc(16px + env(safe-area-inset-top,0px));right:16px" aria-label="Close">×</button><button id="lp" style="left:12px" aria-label="Previous image">‹</button><div id="li"></div><button id="ln" style="right:12px" aria-label="Next image">›</button><p id="lc" aria-live="polite"></p></div>
+<script>
+"use strict";
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+/* ---- CONFIG ---------------------------------------------------------
+   FORM_ENDPOINT: URL of a real form service (Formspree, Netlify Forms, your own API).
+   Leave empty and the form will honestly say nothing is sent.
+   IMG: map a visual to a real photo file, e.g. IMG.lounge="images/lounge.jpg".
+   Keys: lounge cafe coffee private gaming events vip detail map
+   If a file is missing, the built-in concept artwork shows instead. */
+const FORM_ENDPOINT="";
+const IMG={};
+const rm=matchMedia("(prefers-reduced-motion:reduce)");
+const NAV=[["home","HOME"],["experience","EXPERIENCE"],["spaces","SPACES"],["membership","MEMBERSHIP"],["gallery","GALLERY"],["events","EVENTS"],["about","ABOUT"],["contact","CONTACT"]];
+const T={home:"AFTER HOURS — Pay for Time. Stay for the Vibe.",experience:"The Experience",spaces:"Spaces",membership:"Membership",gallery:"Gallery",events:"Events",about:"About",contact:"Contact & Reservation"};
+const D={home:"AFTER HOURS is a premium time-based café, social lounge and private experience destination.",experience:"Explore the AFTER HOURS experience: lounge, café, private spaces and entertainment. Details to be confirmed.",spaces:"Lounge, café, private rooms, gaming zone and VIP settings at AFTER HOURS.",membership:"A concept preview of AFTER HOURS membership. Not currently on sale.",gallery:"Concept visuals of AFTER HOURS spaces, to be replaced with photography.",events:"Launch events, private celebrations and VIP gatherings at AFTER HOURS.",about:"The story and philosophy behind AFTER HOURS.",contact:"Send an enquiry to AFTER HOURS about reservations, private rooms, membership or events."};
+/* ---- ART: concept visuals (no external files) ---- */
+const A={
+lounge:'<path d="M0 360h400v140H0z" fill="#0d0d0e"/><g stroke="#b08d57" fill="none" opacity=".8"><path d="M120 0v110M280 0v80"/><path d="M95 110h50l-10 22h-30zM255 80h50l-10 22h-30z" fill="#b08d57" fill-opacity=".25"/></g><circle cx="120" cy="140" r="95" fill="url(#w)"/><circle cx="280" cy="110" r="85" fill="url(#w)"/><g fill="#17161a" stroke="#b08d57" stroke-opacity=".5"><rect x="40" y="300" width="150" height="80" rx="22"/><rect x="60" y="270" width="110" height="50" rx="18"/><rect x="220" y="310" width="140" height="70" rx="22"/><rect x="238" y="282" width="104" height="46" rx="18"/></g><ellipse cx="200" cy="425" rx="170" ry="26" fill="none" stroke="#b08d57" stroke-opacity=".3"/>',
+cafe:'<path d="M0 380h400v120H0z" fill="#0d0d0e"/><rect x="30" y="330" width="340" height="60" fill="#16151a" stroke="#b08d57" stroke-opacity=".5"/><path d="M30 330h340" stroke="#e6d3a3" stroke-opacity=".6"/><g fill="none" stroke="#b08d57" stroke-opacity=".7"><path d="M60 120h280M60 170h280M110 0v60M290 0v60"/></g><g fill="#b08d57" fill-opacity=".35"><rect x="80" y="100" width="22" height="20" rx="4"/><rect x="130" y="100" width="22" height="20" rx="4"/><rect x="250" y="150" width="22" height="20" rx="4"/><rect x="300" y="150" width="22" height="20" rx="4"/></g><rect x="150" y="270" width="100" height="60" rx="6" fill="#1d1b1f" stroke="#b08d57" stroke-opacity=".6"/><circle cx="110" cy="70" r="75" fill="url(#w)"/><circle cx="290" cy="70" r="75" fill="url(#w)"/>',
+coffee:'<ellipse cx="200" cy="360" rx="120" ry="18" fill="none" stroke="#b08d57" stroke-opacity=".6"/><path d="M140 290h120v30a60 55 0 0 1-120 0z" fill="#1b1a1d" stroke="#e6d3a3" stroke-opacity=".7"/><path d="M260 300a28 24 0 0 1 0 44" fill="none" stroke="#e6d3a3" stroke-opacity=".7"/><path d="M180 260c-14-20 14-30 0-52M215 260c-14-20 14-30 0-52" fill="none" stroke="#e6d3a3" stroke-opacity=".5"/><circle cx="200" cy="230" r="150" fill="url(#w)"/>',
+private:'<path d="M110 460V210a90 90 0 0 1 180 0v250z" fill="#2a2013" stroke="#b08d57" stroke-opacity=".8"/><path d="M135 460V215a65 65 0 0 1 130 0v245z" fill="#e6d3a3" fill-opacity=".14"/><circle cx="200" cy="260" r="160" fill="url(#w)"/><path d="M0 460h400" stroke="#b08d57" stroke-opacity=".4"/><g fill="#101011" stroke="#b08d57" stroke-opacity=".5"><rect x="50" y="400" width="90" height="60" rx="16"/><rect x="260" y="400" width="90" height="60" rx="16"/></g>',
+gaming:'<rect x="60" y="130" width="280" height="160" rx="8" fill="#0e1112" stroke="#e6d3a3" stroke-opacity=".7"/><rect x="72" y="142" width="256" height="136" fill="#e6d3a3" fill-opacity=".08"/><circle cx="200" cy="210" r="170" fill="url(#w)" opacity=".6"/><path d="M150 380c-30 0-40 40-25 55s30-5 45-15h60c15 10 30 30 45 15s5-55-25-55z" fill="#16151a" stroke="#b08d57"/><circle cx="165" cy="392" r="6" fill="#b08d57"/><path d="M235 388h14M242 381v14" stroke="#b08d57"/><path d="M0 330h400" stroke="#b08d57" stroke-opacity=".3"/>',
+events:'<path d="M80 0l-60 420h180zM320 0l-180 420h240z" fill="#e6d3a3" fill-opacity=".05"/><g fill="#e6d3a3" fill-opacity=".18"><circle cx="90" cy="120" r="14"/><circle cx="320" cy="90" r="20"/><circle cx="260" cy="200" r="10"/><circle cx="150" cy="230" r="8"/></g><g fill="none" stroke="#e6d3a3" stroke-opacity=".8"><path d="M160 300l-10-70h40l-10 70zM150 230h40M250 300l-10-70h40l-10 70zM170 300v80M260 300v80M140 380h60M230 380h60"/></g><circle cx="200" cy="260" r="160" fill="url(#w)" opacity=".5"/>',
+vip:'<g transform="rotate(-12 200 250)"><rect x="50" y="170" width="300" height="190" rx="16" fill="#0b0b0c" stroke="#b08d57"/><rect x="66" y="186" width="268" height="158" rx="10" fill="none" stroke="#b08d57" stroke-opacity=".3"/><text x="200" y="272" text-anchor="middle" fill="#b08d57" font-family="Cormorant Garamond,Georgia,serif" font-size="24" letter-spacing="7">AFTER HOURS</text></g><circle cx="200" cy="250" r="190" fill="url(#w)" opacity=".4"/>',
+detail:'<g fill="none" stroke="#b08d57" stroke-opacity=".8"><circle cx="200" cy="230" r="90"/><circle cx="200" cy="230" r="60"/><path d="M200 0v140M110 230h180M137 167l126 126M263 167L137 293"/></g><circle cx="200" cy="230" r="170" fill="url(#w)" opacity=".6"/>',
+map:'<g stroke="#b08d57" stroke-opacity=".25"><path d="M0 120h400M0 220h400M0 320h400M0 420h400M80 0v500M180 0v500M290 0v500"/></g><path d="M0 380L400 140" stroke="#b08d57" stroke-opacity=".5"/><path d="M200 270c-30-40-30-70 0-70s30 30 0 70z" fill="#b08d57"/><circle cx="200" cy="232" r="6" fill="#0a0a0b"/>'};
+const art=k=>`<svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="500" fill="url(#g)"/>${A[k]||A.detail}</svg>`;
+const im=(k,c,l,ar)=>`<div class="im ${c||""}" role="img" aria-label="${l}"${ar?` style="aspect-ratio:${ar}"`:""}>${art(k)}${IMG[k]?`<img src="${IMG[k]}" alt="" loading="lazy" decoding="async" onerror="this.remove()">`:""}<span>${l}</span></div>`;
+/* ---- helpers ---- */
+const btn=(h,t,c="")=>`<a class="btn ${c}" href="#${h}">${t}</a>`;
+const words=t=>t.split(" ").map((w,i)=>`<span class="w"><span style="--i:${i}">${w}</span></span>`).join(" ");
+const hero=(k,kick,h,s,ex="",full=0)=>`<div class="hero${full?"":" sm"}"><div class="bgi">${art(k)}</div><div class="hi"><span class="kick">${kick}</span><h1>${words(h)}</h1><p class="sub">${s}</p>${ex}</div></div>`;
+const head=(k,h)=>`<span class="kick rv">${k}</span><h2 class="rv">${h}</h2>`;
+const sec=(c,x)=>`<section class="${c}"><div class="in">${x}</div></section>`;
+const PH='<span class="tag">Placeholder · details to be confirmed</span>';
+const cards=a=>`<div class="g">${a.map((x,i)=>`<div class="card rv"><span class="n">0${i+1}</span><h3>${x}</h3><p>Description to be confirmed.</p></div>`).join("")}</div>`;
+const SP=[["Main Lounge","Low light, deep seating and an unhurried atmosphere for the main social room.","lounge"],["Premium Private Rooms","Enclosed rooms for those who want more privacy. Capacity and rates TBC.","private"],["Private Seating","Quieter corners within the lounge for smaller groups.","detail"],["Café Area","Coffee, refreshments and light bites. Menu to be announced.","cafe"],["Gaming Zone","A dedicated zone for gaming and entertainment. Games and equipment TBC.","gaming"],["VIP Experience","The most elevated way to spend your time. Inclusions to be confirmed.","vip"]];
+const G=[["Lounge","Main lounge","lounge","4/5"],["Café","Café bar","cafe","1/1"],["Private","Private room","private","3/4"],["Gaming","Gaming zone","gaming","4/3"],["Events","Launch evening","events","4/5"],["Lounge","Interior detail","detail","1/1"],["Café","Coffee service","coffee","3/4"],["Private","VIP card","vip","4/3"],["Events","Celebration","events","1/1"],["Gaming","Console corner","gaming","4/5"],["Lounge","Evening ambience","lounge","3/4"],["Private","Private seating","private","1/1"]];
+const EV=[["Launch Events","Be present for the opening chapters of AFTER HOURS."],["Private Celebrations","Birthdays and milestones in a setting of your own."],["VIP Gatherings","Intimate, invitation-led evenings."],["Special Occasions","Seasonal and one-off nights."]];
+const HL=["Lounge seating","Café &amp; refreshments","Private spaces","Gaming &amp; entertainment","Social experiences","Special events"];
+const card3=(a,b,c)=>`<div class="mc rv"><small>${a}</small><strong>AFTER HOURS</strong><small>${b}</small></div>`;
+/* ---- pages ---- */
+const P={
+home:()=>hero("lounge","Premium time-based café &amp; lounge","AFTER HOURS","Pay for Time. Stay for the Vibe.",`<p>An experience beyond the ordinary.</p><div class="row">${btn("experience","EXPLORE THE EXPERIENCE","f")}${btn("membership","DISCOVER MEMBERSHIP")}</div><span class="cue" aria-hidden="true"></span>`,1)+
+sec("",`<div class="split"><div>${head("Introduction","A room that begins when the day ends")}<p class="rv">AFTER HOURS is a premium café, social lounge and private experience destination. You choose how long to stay; we shape the atmosphere around you.</p></div>${im("lounge","","Main lounge · concept visual")}</div>`)+
+sec("band",`<div class="split r">${im("cafe","","Café counter · concept visual")}<div>${head("The concept","Pay for Time. Stay for the Vibe.")}<p class="rv">Rather than rushing to order and leave, guests spend time. The details of how time is measured and priced are to be confirmed.</p>${PH}</div></div>`)+
+sec("",`${head("Highlights","Experience highlights")}${cards(HL)}`)+
+sec("band",`${head("Spaces","Lounge, café &amp; private spaces")}<div class="hs" tabindex="0" aria-label="Spaces carousel">${SP.map(s=>`<a href="#spaces" aria-label="${s[0]}">${im(s[2],"",s[0])}</a>`).join("")}</div><div class="ctl"><button data-sc="-1" aria-label="Scroll left">‹</button><button data-sc="1" aria-label="Scroll right">›</button></div>`)+
+sec("",`<div class="split"><div>${head("Gaming &amp; entertainment","Play, unwind, connect")}<p class="rv">A dedicated zone for entertainment alongside the lounge. Games and equipment will be announced.</p>${btn("spaces","VIEW SPACES")}</div>${im("gaming","","Gaming zone · concept visual")}</div>`)+
+sec("band",`<div class="split"><div>${head("Membership","A card worth carrying")}<p class="rv">Our membership concept is in development. Enquire to be kept informed.</p>${btn("membership","DISCOVER MEMBERSHIP")}</div>${card3("MEMBER","CONCEPT DESIGN")}</div>`)+
+sec("",`${head("Gallery","A glimpse inside")}<div class="g">${[0,1,2].map(i=>im(G[i][2],"w4",G[i][1])).join("")}</div><div class="row">${btn("gallery","VIEW FULL GALLERY")}</div>`)+
+sec("band",`<div class="split"><div>${head("Visit","Location &amp; contact")}<p class="rv">Address, opening hours and map to be confirmed.</p>${btn("contact","CONTACT US")}</div>${im("map","w4","Map placeholder")}</div>`)+
+sec("cta",`<div><span class="kick rv">Your evening awaits</span><h2 class="rv">Reserve Your Experience</h2><div class="row">${btn("contact","SEND AN ENQUIRY","f")}</div></div>`),
+experience:()=>hero("detail","The experience","Time, well spent","A lounge where the evening is yours to shape.")+
+sec("",`${head("What awaits","Everything in one room")}${cards(["Comfortable lounge seating","Café &amp; refreshments","Private seating spaces","Gaming &amp; entertainment","Social experiences","Special events"])}`)+
+sec("band",`<div class="split r">${im("coffee","","Coffee &amp; refreshments · concept visual")}<div>${head("The journey","From arrival to farewell")}<div class="tl">${[["Arrive","Step out of the day and into the lounge."],["Settle","Choose your space and set your time."],["Enjoy","Café, company and entertainment."],["Extend","Stay longer if the evening calls for it."],["Depart","Settle your time and leave refreshed."]].map(x=>`<div class="rv"><h3>${x[0]}</h3><p>${x[1]}</p></div>`).join("")}</div>${PH}<p style="margin-top:12px">Pricing, booking and time-tracking policies are not yet confirmed.</p></div></div>`)+
+sec("cta",`<div>${head("Next","See the spaces")}<div class="row">${btn("spaces","EXPLORE SPACES","f")}</div></div>`),
+spaces:()=>hero("lounge","Spaces","Rooms for every mood","Six distinct settings under one roof.")+
+SP.map((s,i)=>sec(i%2?"band":"",`<div class="split ${i%2?"r":""}">${im(s[2],"",s[0]+" · concept visual")}<div><span class="kick rv">0${i+1}</span><h2 class="rv">${s[0]}</h2><p class="rv">${s[1]}</p>${PH}</div></div>`)).join("")+
+sec("cta",`<div>${head("Ready?","Enquire about a space")}<div class="row">${btn("contact","ENQUIRE","f")}</div></div>`),
+membership:()=>hero("vip","Membership","The Card","A matte black card, engraved in gold. Concept preview.")+
+sec("",`<div class="split"><div>${head("Introduction","For those who return")}<p class="rv">Membership is not currently open. This page presents the concept; the programme and its benefits are yet to be confirmed.</p><div class="note">Enquire to register interest. No membership is on sale.</div></div>${card3("MEMBER","MATTE BLACK · GOLD ENGRAVING · CONCEPT")}</div>`)+
+sec("band",`${head("Benefits","Proposed pillars")}<div class="g">${["Membership benefits","Priority booking","Exclusive experiences","Special events"].map((x,i)=>`<div class="card rv"><span class="n">0${i+1}</span><h3>${x}</h3><p>Details to be confirmed at launch.</p>${PH}</div>`).join("")}</div>`)+
+sec("cta",`<div>${head("Interested?","Membership enquiry")}<div class="row">${btn("contact","MEMBERSHIP ENQUIRY","f")}</div></div>`),
+gallery:()=>hero("detail","Gallery","Inside AFTER HOURS","Concept visuals until real photography is added.")+
+sec("",`<div class="fl" role="group" aria-label="Filter gallery">${["All","Lounge","Café","Private","Gaming","Events"].map((c,i)=>`<button aria-pressed="${!i}" data-f="${c}">${c}</button>`).join("")}</div><p id="gc" class="tag" role="status" style="margin-bottom:22px"></p><div class="mas" id="mas"></div>`),
+events:()=>hero("events","Events","Nights worth marking","Launches, celebrations and gatherings.")+
+sec("",`${head("Event types","Occasions")}<div class="g">${EV.map((e,i)=>`<div class="card rv"><span class="n">0${i+1}</span><h3>${e[0]}</h3><p>${e[1]}</p></div>`).join("")}</div>`)+
+sec("band",`${head("Upcoming","Event cards")}<div class="g">${[1,2,3].map(n=>`<div class="card rv">${im("events","w4","Event "+n+" · placeholder")}<h3 style="margin-top:18px">Event title TBA</h3><p>Date · Time · Details to be announced.</p>${PH}</div>`).join("")}</div>`)+
+sec("cta",`<div>${head("Host with us","Event enquiry")}<div class="row">${btn("contact","ENQUIRE ABOUT EVENTS","f")}</div></div>`),
+about:()=>hero("private","About us","Our story","Written for the after-hours.")+
+sec("",`<div class="split"><div>${head("Brand story","Why we exist")}<p class="rv">AFTER HOURS began with a simple idea: the best part of the day deserves its own room. Founding story to be provided by the team.</p></div>${im("detail","","Interior detail · concept visual")}</div>`)+
+sec("band",`<div class="g">${[["Vision","To be a premium international destination for time well spent."],["Philosophy","Atmosphere first. Unhurried, considered, discreet."],["Why different","You pay for time, not for a table. Full detail to be confirmed."]].map(x=>`<div class="card rv"><h3>${x[0]}</h3><p>${x[1]}</p></div>`).join("")}</div>`)+
+sec("cta",`<div>${head("Come in","Say hello")}<div class="row">${btn("contact","CONTACT","f")}</div></div>`),
+contact:()=>hero("cafe","Contact / Reservation","Reserve your experience","Send us an enquiry.")+
+sec("",`<div class="split" style="align-items:start"><form id="fm" novalidate><div class="note">Enquiry only. This is not a booking: no reservation, payment or availability is confirmed through this form.</div>
+<div class="two"><div class="fd"><label for="f-n">Name *</label><input id="f-n" name="n" autocomplete="name" aria-describedby="er-n"><small class="er" id="er-n"></small></div><div class="fd"><label for="f-e">Email *</label><input id="f-e" type="email" name="e" autocomplete="email" aria-describedby="er-e"><small class="er" id="er-e"></small></div></div>
+<div class="two"><div class="fd"><label for="f-p">Phone</label><input id="f-p" type="tel" name="p" autocomplete="tel"></div><div class="fd"><label for="f-d">Preferred date</label><input id="f-d" type="date" name="d" aria-describedby="er-d"><small class="er" id="er-d"></small></div></div>
+<div class="two"><div class="fd"><label for="f-g">Guests</label><input id="f-g" type="number" name="g" min="1" max="99" inputmode="numeric" aria-describedby="er-g"><small class="er" id="er-g"></small></div><div class="fd"><label for="f-t">Enquiry type</label><select id="f-t" name="t"><option>General</option><option>Reservation</option><option>Private room</option><option>Membership</option><option>Event</option></select></div></div>
+<div class="fd"><label for="f-m">Message *</label><textarea id="f-m" rows="5" name="m" aria-describedby="er-m"></textarea><small class="er" id="er-m"></small></div>
+<button class="btn f" type="submit">SUBMIT ENQUIRY</button><p id="fs" role="status"></p></form>
+<div><h3>Reach us</h3><p>WhatsApp: <span class="tag">Number TBC</span></p><p>Email: <span class="tag">Address TBC</span></p><p>Social: <span class="tag">Handles TBC</span></p><p>Opening hours: <span class="tag">TBC</span></p><h3 style="margin-top:28px">Location</h3>${im("map","w4","Map placeholder")}</div></div>`)
+};
+/* ---- router ---- */
+let cur=0,list=[],tm,io,last;
+function menu(o){$("#nav").classList.toggle("open",o);$("#bg").setAttribute("aria-expanded",o);document.documentElement.classList.toggle("lock",o);$("#hd").classList.toggle("mo",o)}
+function render(r){
+ const ok=!!P[r],m=$("#main");
+ m.innerHTML=ok?P[r]():hero("detail","404","Page not found","This room doesn’t exist.",`<div class="row">${btn("home","BACK HOME","f")}${btn("spaces","SEE THE SPACES")}${btn("contact","CONTACT")}</div>`);
+ document.title=ok?(r=="home"?T.home:T[r]+" | AFTER HOURS"):"Page not found | AFTER HOURS";
+ const md=$("meta[name=description]");md&&md.setAttribute("content",ok?D[r]:"This page does not exist on AFTER HOURS.");
+ document.body.dataset.p=ok?r:"404";
+ $("#nav").innerHTML=NAV.map(n=>`<a class="l ${n[0]==r?"on":""}" href="#${n[0]}"${n[0]==r?' aria-current="page"':""}>${n[1]}</a>`).join("")+`<a class="btn s" href="#contact">RESERVE YOUR EXPERIENCE</a>`;
+ menu(false);scrollTo({top:0,behavior:"instant"});m.focus({preventScroll:true});
+ if(r=="gallery")gal("All");if(r=="contact")form();obs();
+}
+function show(first){
+ const r=location.hash.slice(1)||"home",cv=$("#cv");clearTimeout(tm);
+ if(first||rm.matches){render(r);return}
+ cv.classList.add("on");tm=setTimeout(()=>{render(r);requestAnimationFrame(()=>cv.classList.remove("on"))},520);
+}
+function obs(){io&&io.disconnect();io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12,rootMargin:"0px 0px -5% 0px"});$$(".rv,.im").forEach(n=>io.observe(n))}
+/* ---- gallery + viewer ---- */
+function gal(c){
+ list=G.filter(g=>c=="All"||g[0]==c);
+ $("#mas").innerHTML=list.length?list.map((g,k)=>`<button data-k="${k}" aria-label="Open image: ${g[1]}">${im(g[2],"",g[0]+" · "+g[1],g[3])}</button>`).join(""):'<p class="empty">No images in this category yet.</p>';
+ $("#gc").textContent=list.length+(list.length==1?" image":" images")+" · "+c;
+ $$(".fl button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.f==c));obs();
+}
+function lb(k){
+ if(!list.length)return;if(!$("#lb").classList.contains("on"))last=document.activeElement;
+ cur=(k+list.length)%list.length;const g=list[cur];
+ $("#li").innerHTML=im(g[2],"in",g[1]);$("#lc").textContent=g[0]+" · "+g[1]+" · "+(cur+1)+"/"+list.length;
+ $("#lb").classList.add("on");document.documentElement.classList.add("lock");if(k===+k&&document.activeElement.closest&&!document.activeElement.closest("#lb"))$("#lx").focus();
+}
+function lbx(){$("#lb").classList.remove("on");document.documentElement.classList.remove("lock");last&&last.focus&&last.focus()}
+/* ---- form ---- */
+const today=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+function form(){
+ const f=$("#fm");f.d.min=today();
+ const V={n:v=>v.trim().length>1||"Please enter your name.",e:v=>/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim())||"Please enter a valid email address.",d:v=>!v||v>=today()||"Please choose today or a later date.",g:v=>!v||(Number.isInteger(+v)&&+v>=1&&+v<=99)||"Guests must be a whole number from 1 to 99.",m:v=>v.trim().length>=10||"Please add a short message (at least 10 characters)."};
+ const chk=k=>{const el=f[k],r=V[k](el.value),er=$("#er-"+k);el.setAttribute("aria-invalid",r!==true);er.textContent=r===true?"":r;return r===true};
+ Object.keys(V).forEach(k=>{f[k].addEventListener("blur",()=>chk(k));f[k].addEventListener("input",()=>{if(f[k].getAttribute("aria-invalid")=="true")chk(k)})});
+ f.onsubmit=async e=>{
+  e.preventDefault();const s=$("#fs");s.className="";
+  const bad=Object.keys(V).filter(k=>!chk(k));
+  if(bad.length){s.className="bad";s.textContent="Please correct the highlighted fields.";f[bad[0]].focus();return}
+  if(!FORM_ENDPOINT){s.className="bad";s.textContent="Not sent. This website is not yet connected to an enquiry service, so nothing was submitted. Please try again once contact details are published.";return}
+  const b=f.querySelector("button");b.disabled=true;s.textContent="Sending…";
+  try{const r=await fetch(FORM_ENDPOINT,{method:"POST",body:new FormData(f),headers:{Accept:"application/json"}});if(!r.ok)throw 0;f.reset();s.className="ok";s.textContent="Thank you. Your enquiry has been sent. This is not a confirmed reservation; we will reply to you directly."}
+  catch(_){s.className="bad";s.textContent="Something went wrong and your enquiry was not sent. Please try again shortly."}
+  b.disabled=false};
+}
+/* ---- events ---- */
+document.addEventListener("click",e=>{
+ const a=e.target.closest("a[href^='#']");
+ if(a){if(a.getAttribute("href")=="#"+(location.hash.slice(1)||"home")){e.preventDefault();scrollTo({top:0,behavior:rm.matches?"auto":"smooth"})}menu(false);return}
+ const f=e.target.closest("[data-f]");if(f)return gal(f.dataset.f);
+ const b=e.target.closest("#mas button");if(b)return lb(+b.dataset.k);
+ const s=e.target.closest("[data-sc]");if(s){const h=$(".hs");h&&h.scrollBy({left:+s.dataset.sc*Math.min(340,h.clientWidth*.8),behavior:rm.matches?"auto":"smooth"})}
+});
+$("#bg").onclick=()=>menu(!$("#nav").classList.contains("open"));
+$("#lx").onclick=lbx;$("#lp").onclick=()=>lb(cur-1);$("#ln").onclick=()=>lb(cur+1);
+$("#lb").onclick=e=>{if(e.target.id=="lb")lbx()};
+$("#tp").onclick=()=>scrollTo({top:0,behavior:rm.matches?"auto":"smooth"});
+let tx=0;$("#lb").addEventListener("touchstart",e=>{tx=e.touches[0].clientX},{passive:true});
+$("#lb").addEventListener("touchend",e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)lb(cur+(d<0?1:-1))},{passive:true});
+document.addEventListener("keydown",e=>{
+ if($("#lb").classList.contains("on")){
+  if(e.key=="Escape")lbx();else if(e.key=="ArrowLeft")lb(cur-1);else if(e.key=="ArrowRight")lb(cur+1);
+  else if(e.key=="Tab"){const x=[$("#lx"),$("#lp"),$("#ln")],i=x.indexOf(document.activeElement);e.preventDefault();x[(i+(e.shiftKey?-1:1)+3)%3].focus()}
+  return}
+ if(e.key=="Escape"&&$("#nav").classList.contains("open")){menu(false);$("#bg").focus()}
+});
+addEventListener("resize",()=>{if(innerWidth>1080)menu(false)});
+let tk=0;addEventListener("scroll",()=>{if(tk)return;tk=requestAnimationFrame(()=>{tk=0;const y=scrollY;$("#hd").classList.toggle("sc",y>40);$("#tp").classList.toggle("on",y>900);const b=$(".hero .bgi");if(b&&!rm.matches&&y<innerHeight*1.2)b.style.setProperty("--py",Math.min(y*.22,180)+"px")})},{passive:true});
+$("#ft").innerHTML=`<div><a class="logo" href="#home">AFTER HOURS</a>Pay for Time. Stay for the Vibe.</div><div>${NAV.map(n=>`<a class="fa" href="#${n[0]}">${n[1]}</a>`).join("")}</div><div>WhatsApp, email and social links: <span class="tag">TBC</span><br><br>Address and opening hours: <span class="tag">TBC</span><br><br>© AFTER HOURS</div>`;
+addEventListener("hashchange",()=>show(false));
+show(true);
+setTimeout(()=>$("#load").classList.add("off"),rm.matches?80:1400);
+</script>
+</body>
+</html>
